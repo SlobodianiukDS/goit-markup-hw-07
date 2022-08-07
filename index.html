@@ -13,41 +13,46 @@
       rel="stylesheet"
     />
     <!-- шрифты -->
-    <link rel="stylesheet" href="./css/resset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="haed-bord">
-      <div class="container head-line">
-        <nav class="links head-line">
-          <a href="./index.html" class="logo" lang="en"
-            ><span class="logo-first">Web</span
-            ><span class="logo-half">Studio</span></a
-          >
-          <ul class="links-nav">
-            <li class="links-nav-marg">
-              <a class="links-nav-text visited" href="./index.html">Студия</a>
+    <header class="header">
+      <div class="container container--flex">
+        <nav class="navigation-box navigation-box--border">
+          <div class="logo-box">
+            <a href="./index.html" class="logo" lang="en"
+              ><span class="logo__first-half">Web</span
+              ><span class="logo__second-half">Studio</span></a
+            >
+          </div>
+          <ul class="navigation">
+            <li class="navigation__list">
+              <a
+                class="navigation__link navigation__link--visited"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="links-nav-marg">
-              <a class="links-nav-text" href="./portfolio.html">Портфолио</a>
+            <li class="navigation__list">
+              <a class="navigation__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="links-nav-marg">
-              <a class="links-nav-text" href="./try.html">Контакты</a>
+            <li class="navigation__list">
+              <a class="navigation__link" href="./try.html">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="links-contact">
-          <li class="links-nav-marg">
-            <a class="links-contact-text" href="mailto:info@devstudio.com"
-              ><svg class="icon-contact-text" width="16" height="12">
+        <ul class="contact">
+          <li class="contact__list">
+            <a class="contact__link" href="mailto:info@devstudio.com"
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#email"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="links-nav-marg">
-            <a class="links-contact-text" href="tel:+380961111111">
-              <svg class="icon-contact-text" width="16" height="16">
+          <li class="contact__list">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="16" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -60,8 +65,8 @@
     <main>
       <section class="section-hero">
         <div class="container">
-          <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="button" type="button">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button data-modal-open class="hero__button" type="button">
             Заказать услугу
           </button>
         </div>
@@ -71,50 +76,50 @@
         <div class="container">
           <h2 class="text-hidden">Наши преимущества</h2>
           <ul class="benefits">
-            <li class="benefits-li">
-              <div class="box-icon-benefit" style="height: 120px">
-                <svg class="icon-benefit" width="70" height="70">
+            <li class="benefits__list">
+              <div class="benefit__box-icon" style="height: 120px">
+                <svg class="benefit__icon" width="70" height="70">
                   <use href="./images/icons.svg#sputnik"></use>
                 </svg>
               </div>
-              <h3 class="benefits-tittle">Внимание к деталям</h3>
-              <p class="benefits-text">
+              <h3 class="benefits__tittle">Внимание к деталям</h3>
+              <p class="benefits__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="benefits-li">
-              <div class="box-icon-benefit" style="height: 120px">
-                <svg class="icon-benefit" width="70" height="70">
+            <li class="benefits__list">
+              <div class="benefit__box-icon" style="height: 120px">
+                <svg class="benefit__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-tittle">Пунктуальность</h3>
-              <p class="benefits-text">
+              <h3 class="benefits__tittle">Пунктуальность</h3>
+              <p class="benefits__text">
                 Задача организации, в особенности же рамки и место обучения кадров
                 влечет за собой.
               </p>
             </li>
-            <li class="benefits-li">
-              <div class="box-icon-benefit" style="height: 120px">
-                <svg class="icon-benefit" width="70" height="70">
+            <li class="benefits__list">
+              <div class="benefit__box-icon" style="height: 120px">
+                <svg class="benefit__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits-tittle">Планирование</h3>
-              <p class="benefits-text">
+              <h3 class="benefits__tittle">Планирование</h3>
+              <p class="benefits__text">
                 Равным образом консультация с широким активом в значительной степени
                 обуславливает.
               </p>
             </li>
-            <li class="benefits-li">
-              <div class="box-icon-benefit" style="height: 120px">
-                <svg class="icon-benefit" width="70" height="70">
+            <li class="benefits__list">
+              <div class="benefit__box-icon" style="height: 120px">
+                <svg class="benefit__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-tittle">Современные технологии</h3>
-              <p class="benefits-text">
+              <h3 class="benefits__tittle">Современные технологии</h3>
+              <p class="benefits__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых
                 заданий.
               </p>

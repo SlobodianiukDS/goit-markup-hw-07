@@ -23,3 +23,7 @@
     color: map-get($colors, secondary-text);
   }
 }
+.logo__second-half--white {
+  color: map-get($colors, white-prymary-full);
+  @include trans();
+}

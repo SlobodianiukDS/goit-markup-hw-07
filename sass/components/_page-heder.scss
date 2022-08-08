@@ -10,10 +10,6 @@
 .navigation {
   @extend %flexCenterLine;
 }
-.contact {
-  @extend %flexCenterLine;
-  margin-left: auto;
-}
 .navigation__list {
   & + & {
     margin-left: 50px;
@@ -51,36 +47,5 @@
 
     background: map-get($colors, accent-color);
     border-radius: 2px;
-  }
-}
-.contact__list {
-  & + & {
-    margin-left: 50px;
-  }
-}
-.contact__link {
-  @extend %flexCenterLine;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  line-height: 1.142;
-  color: map-get($colors, secondary-text);
-  @include trans();
-
-  &:hover,
-  &:focus {
-    color: map-get($colors, accent-color);
-  }
-}
-.contact__icon {
-  fill: map-get($colors, secondary-text);
-  margin-right: 10px;
-
-  @include trans(fill);
-
-  .contact__link:hover &,
-  .contact__link:focus & {
-    fill: map-get($colors, accent-color);
   }
 }

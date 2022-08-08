@@ -10,3 +10,9 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.section--grey {
+  background-color: map-get($colors, grey-bkg-bright);
+}
+.box {
+  position: relative;
+}

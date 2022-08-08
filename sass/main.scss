@@ -1,9 +1,12 @@
-@import 'components/reset';
 @import 'utils/variables';
 @import 'utils/placeholder';
 @import 'utils/mixins';
+@import 'basis/reset';
 @import 'basis/other';
+@import 'basis/title_list';
 @import 'components/pege-heder';
 @import 'components/logo';
 @import 'components/hero';
 @import 'components/benefits';
+@import 'components/gallery';
+@import 'components/teams';

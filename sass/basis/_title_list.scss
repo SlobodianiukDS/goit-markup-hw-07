@@ -1,0 +1,14 @@
+.cards__title {
+  @extend %CenterText;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+}
+.cards {
+  display: flex;
+}
+.cards__list {
+  & + & {
+    margin-left: 30px;
+  }
+}

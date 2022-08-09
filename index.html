@@ -486,12 +486,14 @@
           </ul>
         </div>
         <div class="footer__box-subscribe">
-          <label class="footer__title footer__title--padding" for="email"
-            >Подпишитесь на рассылку</label
+          <label
+            ><span class="input-label footer__input-label"
+              >Подпишитесь на рассылку</span
+            ></label
           >
           <form class="box-flex" name="subscr-form" autocomplete="on">
             <input
-              class="footer__input"
+              class="input footer__input"
               type="email"
               name="email"
               id="email"
@@ -499,7 +501,7 @@
             />
             <button type="submit" class="button footer__button">
               Подписаться
-              <svg class="footer__button-icon">
+              <svg class="button__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -509,65 +511,73 @@
     </footer>
 
     <div data-modal class="modal is-hidden">
-      <div class="box-modal-form">
-        <button data-modal-close class="modal-close-bt" type="button">x</button>
-        <form class="modal-form">
-          <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+      <div class="modal__box">
+        <button data-modal-close class="button-close" type="button">x</button>
+        <form class="modal__form">
+          <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
           <div role="group">
-            <label
-              ><span class="name-lable">Имя</span>
-              <span class="icon-mod-position">
-                <input class="inp-name" type="text" name="name" placeholder=" " />
-                <span class="icon-inp-hover">
-                  <svg class="icon-inp">
-                    <use href="./images/icons.svg#celovechek"></use>
-                  </svg>
-                </span>
+            <label class="box"
+              ><span class="input-label modal__input-label">Имя</span>
+              <span class="box">
+                <input
+                  class="input modal__input"
+                  type="text"
+                  name="name"
+                  placeholder=" "
+                />
+                <svg class="input-icon">
+                  <use href="./images/icons.svg#celovechek"></use>
+                </svg>
               </span>
             </label>
-            <label
-              ><span class="name-lable">Телефон</span>
-              <span class="icon-mod-position">
+            <label class="box"
+              ><span class="input-label modal__input-label">Телефон</span>
+              <span class="box">
                 <input
-                  class="inp-name"
+                  class="input modal__input"
                   type="tel"
                   name="number-phone"
                   placeholder=" "
                 />
-                <span class="icon-inp-hover">
-                  <svg class="icon-inp">
-                    <use href="./images/icons.svg#telefon"></use>
-                  </svg>
-                </span>
+                <svg class="input-icon">
+                  <use href="./images/icons.svg#telefon"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="box"
+              ><span class="input-label modal__input-label">Почта</span>
+              <span class="box">
+                <input
+                  class="input modal__input"
+                  type="email"
+                  name="mail"
+                  placeholder=" "
+                />
+                <svg class="input-icon">
+                  <use href="./images/icons.svg#convert"></use>
+                </svg>
               </span>
             </label>
             <label
-              ><span class="name-lable">Почта</span>
-              <span class="icon-mod-position">
-                <input class="inp-name" type="email" name="mail" placeholder=" " />
-                <span class="icon-inp-hover">
-                  <svg class="icon-inp">
-                    <use href="./images/icons.svg#convert"></use>
-                  </svg>
-                </span>
-              </span>
-            </label>
-            <label
-              ><span class="name-lable">Комментарий</span>
+              ><span class="input-label modal__input-label">Комментарий</span>
               <textarea
-                class="comments"
+                class="input input-comments"
                 name="comments"
                 placeholder="Введите текст"
               ></textarea>
             </label>
-            <label class="box-agreement">
-              <input class="agreement" type="checkbox" />
-              <a class="Terms" href="">Условия договора</a>
-              <span class="text-arg">Соглашаюсь с рассылкой и принимаю</span>
-              <span class="inp-icon"> </span>
+            <label class="box agreement">
+              <span class="agreement__input-label"
+                ><input class="input-agreement" type="checkbox" />
+                <a class="agreement__terms" href="">Условия договора</a>
+                <span class="agreement__text"
+                  >Соглашаюсь с рассылкой и принимаю</span
+                >
+                <span class="agreement__icon"> </span>
+              </span>
             </label>
           </div>
-          <button class="modal-enter-bt" type="submit">Отправить</button>
+          <button class="button modal__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

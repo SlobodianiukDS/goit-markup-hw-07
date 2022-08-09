@@ -965,10 +965,7 @@ body {
   border-color: var(--accent-color);
 }
 .comments::placeholder {
-<<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
-=======
->>>>>>> parent of 3753294 (1)
   font-weight: 400;
   font-size: 12px;
   line-height: 1.14;
@@ -982,10 +979,6 @@ body {
   margin: 30px auto 0;
   padding: 10px 55px;
 
-<<<<<<< HEAD
-  font-family: 'Roboto', sans-serif;
-=======
->>>>>>> parent of 3753294 (1)
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;

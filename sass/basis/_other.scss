@@ -17,6 +17,7 @@ body {
   background-color: map-get($colors, grey-bkg-dark);
 }
 .box {
+  display: block;
   position: relative;
 }
 .box-flex {
@@ -33,6 +34,5 @@ body {
   opacity: 0;
   pointer-events: none;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include trans2(transform, opacity);
 }

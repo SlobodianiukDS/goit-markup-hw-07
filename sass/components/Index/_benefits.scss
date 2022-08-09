@@ -2,17 +2,6 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.text-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
 .benefits__list {
   width: calc((100% - 90px) / 4);
 }

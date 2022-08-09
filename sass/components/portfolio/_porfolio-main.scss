@@ -1,0 +1,11 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter__box {
+  display: flex;
+  justify-content: center;
+}
+.filter__list:not(:last-child) {
+  margin-right: 8px;
+}

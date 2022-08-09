@@ -47,3 +47,6 @@ body {
 
   @include trans2(transform, opacity);
 }
+.overhid {
+  overflow: hidden;
+}
